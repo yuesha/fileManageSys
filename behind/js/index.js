@@ -1,5 +1,6 @@
 // 检查表单数据
 function check() {
+	var form = document.getElementById("loginForm");
 	// 获取表单的值
 	var username = document.getElementsByName("username")[0].value;
 	var pwd = document.getElementsByName("pwd")[0].value;
@@ -17,6 +18,7 @@ function check() {
 		return;
 	}else{
 		// 表单验证完成
-		alert("验证完成");
+		// alert("验证完成");
+		form.submit();
 	}
 }
