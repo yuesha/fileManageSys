@@ -6,19 +6,23 @@
 	<link rel="stylesheet" type="text/css" href="./css/login.css">
 </head>
 <body>
-	<form action="#" method="post">
+	<form action="./loginAction.php" method="post">
 		<div>
 			<span>用户名：</span>
 			<input type="text" name="username" value="" class="userName">
 		</div>
 		<div>
-			<span>密&nbsp码：</span>
+			<span>密&nbsp;码：</span>
 			<input type="password" name="pwd" class="pass">
 		</div>
 		<div>
-			<input type="button" class="btn01" value= "登录">
+			<input type="button" class="btn01" value="登录" onclick="check()">
 			<input type="reset" class="btn02" value="重置">
 		</div>
 	</form>
+
+	<!-- 表单的验证函数 -->
+	<script type="text/javascript" src="./js/index.js"></script>
+
 </body>
 </html>
